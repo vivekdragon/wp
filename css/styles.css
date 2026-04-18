@@ -3940,11 +3940,38 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 600px) {
+    .s-hero {
+        /* Use 100svh (small viewport) so iOS Safari chrome bars don't cut content */
+        height: 100vh;
+        height: 100svh;
+    }
+    /* Stretch bg to fill the full hero — use TRBL 0 so it works
+       regardless of how parent height is computed */
+    .s-hero__bg {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    /* Stronger dark overlay so text stays readable over full-bleed image */
+    .s-hero__bg::after {
+        opacity: .55;
+    }
+    .s-hero__bg .gradient-overlay {
+        opacity: .6;
+    }
+    .s-hero__content {
+        padding-top: 14rem;
+        padding-bottom: 10rem;
+    }
     .s-hero__content h1 {
-        font-size: 28vw;
+        font-size: 18vw;
     }
     .s-hero__content-about {
-        padding-right: 15vw;
+        font-size: 2.4rem;
+        padding-right: 3rem;
     }
     .s-hero__content-about br {
         display: none;
@@ -3953,18 +3980,19 @@ html.no-csstransitions .s-hero__content {
         right: 2.8rem;
     }
     .s-hero__video {
-        right: calc(100% - 30rem);
+        right: auto;
+        left: 4rem;
+        bottom: 3.6rem;
     }
 }
 
 @media screen and (max-width: 500px) {
     .s-hero__content h1::before {
-        left: -6rem;
-        bottom: .6em;
+        display: none;
     }
     .s-hero__content-about {
-        font-size: 2.6rem;
-        padding-right: 4rem;
+        font-size: 2.4rem;
+        padding-right: 3rem;
         padding-left: .5em;
     }
 }
@@ -3973,23 +4001,18 @@ html.no-csstransitions .s-hero__content {
     .s-header__logo {
         left: 3.2rem;
     }
+    .s-header__logo img {
+        width: 120px;
+    }
     .s-header__menu-toggle {
         right: 3.2rem;
     }
-    .s-hero__content h1::before {
-        left: -8rem;
-    }
     .s-hero__content {
-        padding-bottom: 14vh;
+        padding-bottom: 10rem;
     }
     .s-hero__content-about {
-        font-size: 2.2rem;
-        padding-right: 6rem;
-    }
-    .s-hero__video {
-        right: auto;
-        left: 9vw;
-        bottom: 8.2vh;
+        font-size: 2rem;
+        padding-right: 2rem;
     }
 }
 
