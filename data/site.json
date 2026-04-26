@@ -1,0 +1,214 @@
+{
+    "config": {
+        "projectsClickable": true
+    },
+    "services": [
+        {
+            "title": "Custom Software Development",
+            "description": "Tailored web applications, APIs, and platforms built with modern frameworks and battle-tested patterns.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/></svg>"
+        },
+        {
+            "title": "Cloud & DevOps",
+            "description": "AWS, Azure, and GCP infrastructure design with CI/CD pipelines, containerization, and auto-scaling.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"/><path d=\"M2 17l10 5 10-5\"/><path d=\"M2 12l10 5 10-5\"/></svg>"
+        },
+        {
+            "title": "AI & Machine Learning",
+            "description": "Intelligent features powered by NLP, computer vision, and predictive models integrated into your existing workflow.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83\"/></svg>"
+        },
+        {
+            "title": "Cybersecurity",
+            "description": "Vulnerability assessments, penetration testing, and secure architecture reviews to protect your digital assets.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>"
+        },
+        {
+            "title": "Data Engineering & Analytics",
+            "description": "Data pipelines, warehousing, and visualization dashboards that turn raw numbers into actionable insights.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z\"/><path d=\"M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12\"/></svg>"
+        },
+        {
+            "title": "Digital Strategy & Consulting",
+            "description": "Technology roadmaps, architecture audits, and product strategy sessions to align your tech with business goals.",
+            "icon": "<svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75\"/></svg>"
+        }
+    ],
+    "projects": [
+        {
+            "id": "nimbusops",
+            "category": "cloud",
+            "categoryLabel": "Cloud",
+            "title": "NimbusOps Platform",
+            "description": "Multi-cloud orchestration dashboard for a logistics enterprise.",
+            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+            "imageAlt": "Cloud infrastructure dashboard",
+            "detail": {
+                "client": "Global Logistics Corp",
+                "timeline": "16 Weeks",
+                "categoryFull": "Cloud & DevOps",
+                "year": "2024",
+                "subtitle": "A multi-cloud orchestration dashboard that unified three cloud providers into a single control plane for a logistics enterprise.",
+                "heroImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+                "challenge": [
+                    "Global Logistics Corp operated across AWS, Azure, and GCP with separate teams managing each environment. Deployments were inconsistent, monitoring was fragmented, and cost visibility was poor. Their engineering team spent 40% of their time on operational toil rather than building features.",
+                    "They needed a unified platform that would give their teams a single pane of glass for infrastructure management while maintaining the flexibility of using best-of-breed services from each cloud provider."
+                ],
+                "solution": [
+                    "We designed and built NimbusOps — a centralized orchestration dashboard that abstracts away cloud provider differences while preserving full access to native APIs when needed.",
+                    "The platform features a unified deployment pipeline with Terraform-based IaC templates, real-time cost tracking across all three providers, consolidated alerting, and a self-service portal for developer teams. We implemented role-based access control so each team sees only the resources relevant to their domain.",
+                    "The dashboard was built as a React SPA backed by a Go microservices layer, with each cloud integration running as an independent adapter service for resilience and independent scaling."
+                ],
+                "resultsIntro": "Within three months of launch, the platform transformed how Global Logistics Corp manages its cloud infrastructure.",
+                "results": [
+                    { "value": "60%", "label": "Faster Deployments" },
+                    { "value": "$240K", "label": "Annual Cloud Savings" },
+                    { "value": "3x", "label": "Developer Productivity" }
+                ],
+                "techStackIntro": "The project leveraged a modern cloud-native architecture with technologies chosen for scalability, maintainability, and developer experience.",
+                "techStack": ["React", "TypeScript", "Go", "Terraform", "Kubernetes", "PostgreSQL", "Redis", "gRPC", "Prometheus", "Grafana"],
+                "gallery": [
+                    { "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80", "alt": "Dashboard analytics view" },
+                    { "src": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=700&q=80", "alt": "Infrastructure diagram" },
+                    { "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&q=80", "alt": "Monitoring panel" },
+                    { "src": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=700&q=80", "alt": "Team collaboration" }
+                ]
+            }
+        },
+        {
+            "id": "insightai",
+            "category": "ai",
+            "categoryLabel": "AI / ML",
+            "title": "InsightAI Analytics",
+            "description": "Predictive analytics engine for a healthcare data science team.",
+            "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+            "imageAlt": "AI analytics interface",
+            "detail": {
+                "client": "Helix Health",
+                "timeline": "20 Weeks",
+                "categoryFull": "AI / Machine Learning",
+                "year": "2024",
+                "subtitle": "A predictive analytics engine that helps clinicians anticipate patient deterioration hours earlier than traditional methods.",
+                "heroImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1400&q=80",
+                "challenge": [
+                    "Helix Health's data science team was drowning in disconnected EHR data with no way to operationalize their models. Manual reporting cycles took days and predictions never reached the bedside.",
+                    "They needed a production-grade ML platform that could ingest streaming clinical data, serve models in real time, and surface insights through clinician-friendly dashboards."
+                ],
+                "solution": [
+                    "We built an end-to-end MLOps pipeline with feature stores, model registry, and an A/B testing framework — paired with a React dashboard tailored for clinical workflows.",
+                    "Models are retrained nightly on de-identified data, with drift detection and human-in-the-loop review before each promotion to production."
+                ],
+                "resultsIntro": "Six months after rollout, the platform measurably improved care quality.",
+                "results": [
+                    { "value": "70%", "label": "Less manual review" },
+                    { "value": "4 hr", "label": "Earlier alerts" },
+                    { "value": "12", "label": "Models in production" }
+                ],
+                "techStackIntro": "Built on a modern Python ML stack with a React frontend.",
+                "techStack": ["Python", "PyTorch", "MLflow", "Airflow", "Kafka", "React", "FastAPI", "Snowflake"],
+                "gallery": [
+                    { "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80", "alt": "Analytics view" },
+                    { "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=700&q=80", "alt": "Model dashboard" }
+                ]
+            }
+        },
+        {
+            "id": "cartflow",
+            "category": "web",
+            "categoryLabel": "Web App",
+            "title": "CartFlow Commerce",
+            "description": "High-performance e-commerce platform handling 10K+ daily orders.",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+            "imageAlt": "E-commerce platform",
+            "detail": {
+                "client": "CartFlow Retail",
+                "timeline": "24 Weeks",
+                "categoryFull": "Web Application",
+                "year": "2023",
+                "subtitle": "A headless commerce platform built to handle holiday-scale traffic without breaking a sweat.",
+                "heroImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80",
+                "challenge": [
+                    "Their legacy monolith couldn't keep up with seasonal spikes, causing checkout failures and lost revenue."
+                ],
+                "solution": [
+                    "We rebuilt the storefront on a headless architecture with edge-cached product pages and an event-driven order pipeline."
+                ],
+                "resultsIntro": "Holiday season ran without a single incident.",
+                "results": [
+                    { "value": "10K+", "label": "Daily Orders" },
+                    { "value": "2.1s", "label": "Avg Page Load" },
+                    { "value": "99.99%", "label": "Uptime" }
+                ],
+                "techStackIntro": "Modern headless commerce stack.",
+                "techStack": ["Next.js", "Node.js", "Stripe", "Algolia", "Redis", "PostgreSQL"],
+                "gallery": [
+                    { "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80", "alt": "Storefront" }
+                ]
+            }
+        },
+        {
+            "id": "pulsetrack",
+            "category": "mobile",
+            "categoryLabel": "Mobile",
+            "title": "PulseTrack Health",
+            "description": "Cross-platform wellness app with real-time wearable sync.",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
+            "imageAlt": "Mobile application",
+            "detail": {
+                "client": "PulseTrack",
+                "timeline": "14 Weeks",
+                "categoryFull": "Mobile Application",
+                "year": "2024",
+                "subtitle": "A cross-platform wellness companion that syncs with major wearables and gamifies daily health habits.",
+                "heroImage": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1400&q=80",
+                "challenge": [
+                    "PulseTrack needed a single codebase that could deliver native-quality experiences on iOS and Android while syncing data from a dozen different wearable devices."
+                ],
+                "solution": [
+                    "We delivered a React Native app with a Bluetooth abstraction layer, offline-first storage, and a delightful animation system that keeps users engaged."
+                ],
+                "resultsIntro": "App Store featured in week one of launch.",
+                "results": [
+                    { "value": "4.8", "label": "App Store Rating" },
+                    { "value": "120K", "label": "Active Users" },
+                    { "value": "12", "label": "Wearables Supported" }
+                ],
+                "techStackIntro": "React Native with native modules where it matters.",
+                "techStack": ["React Native", "TypeScript", "GraphQL", "Realm", "Firebase"],
+                "gallery": [
+                    { "src": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700&q=80", "alt": "App screen" }
+                ]
+            }
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Arjun Mehta",
+            "role": "CTO, DataVault Solutions",
+            "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&q=80",
+            "rating": 5,
+            "quote": "Wisepath turned our messy legacy system into a modern, containerized platform in under four months. Their engineering quality is outstanding."
+        },
+        {
+            "name": "Priya Sharma",
+            "role": "Founder, GreenLeaf Fintech",
+            "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&q=80",
+            "rating": 5,
+            "quote": "We needed a partner who could move fast without cutting corners. Wisepath delivered our MVP two weeks early, and it scaled beautifully from day one."
+        },
+        {
+            "name": "Ravi Patel",
+            "role": "VP Engineering, NovaRetail",
+            "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&q=80",
+            "rating": 5,
+            "quote": "Their AI integration work cut our manual review time by 70%. The team is deeply technical but always communicates in a way our business stakeholders understand."
+        },
+        {
+            "name": "Lakshmi Iyer",
+            "role": "Head of Product, FinPilot",
+            "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&q=80",
+            "rating": 5,
+            "quote": "The Wisepath crew embedded with our team like founding engineers. They asked the hard questions and shipped a product we are genuinely proud of."
+        }
+    ]
+}
